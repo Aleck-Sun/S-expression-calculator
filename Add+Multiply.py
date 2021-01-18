@@ -29,7 +29,7 @@ def addMultiply(inputs):
         operator = inputs[1:parameterStart-1]
 
         #If first parameter is not nested
-        if inputs[parameterStart+1] != "(":
+        if inputs[parameterStart] != "(":
             #second parameter starts at first space index
             parameter2Start = inputs.find(" ", parameterStart+1)
 
